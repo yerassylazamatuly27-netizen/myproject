@@ -5,6 +5,7 @@ import LoginPage from "./Pages/LoginPage.jsx";
 import RegisterPage from "./Pages/RegisterPage.jsx";
 import RecipeListPage from "./Pages/RecipeListPage.jsx"; 
 import CreateRecipePage from "./Pages/CreateRecipePage.jsx"; 
+import RecipePage from "./Pages/RecipePage.jsx";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Route path="/register" element={<RegisterPage />} />
       <Route path="/recipes" element={<RecipeListPage />} /> 
       <Route path="/create-recipe" element={<CreateRecipePage />} />
+      <Route path="/recipes/:id" element={<RecipePage />} />
     </Routes>
   );
 }

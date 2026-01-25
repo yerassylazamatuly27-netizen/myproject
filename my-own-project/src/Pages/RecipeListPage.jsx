@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { getRecipes } from "../services/recipeService";
 import "../App.css"; 
+import RecipeCard from "../components/RecipeCard";
 
 function RecipeListPage() {
   const [recipes, setRecipes] = useState([]);
@@ -23,15 +24,8 @@ function RecipeListPage() {
 
       <div className="recipe-grid">
         {recipes.map(recipe => (
-          <div className="recipe-card" key={recipe.id}>
-            <img
-              src={recipe.image}
-              alt={recipe.title}
-              className="recipe-image"
-            />
-            <h3>{recipe.title}</h3>
-            <p>{recipe.description}</p>
-          </div>
+            <RecipeCard key={recipe.id} recipe={recipe} />
+         
         ))}
       </div>
     </div>
