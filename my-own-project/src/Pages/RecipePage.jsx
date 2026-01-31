@@ -23,6 +23,7 @@ const RecipePage = () => {
 
     return (
         <div className="recipe-card">
+            <h2 className="recipe-title">{recipe.title}</h2>
             <img
                 src={recipe.src}
                 alt={recipe.title}
@@ -30,6 +31,8 @@ const RecipePage = () => {
             />
             <h3 className="recipe-title">{recipe.title}</h3>
             <p className="recipe-description">{recipe.description}</p>
+            <p className="recipe-algorithm">{recipe.algorithm}</p>
+            <p className="recipe-time">{recipe.time}</p>
         </div>
     )
 }

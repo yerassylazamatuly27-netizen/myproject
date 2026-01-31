@@ -33,9 +33,10 @@
     },
     {
       "id": "1769286653405",
-      "title": "Pepperoni pizza",
+      "title": "Pepperoni pizzawa",
       "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2f38jmDq8OZhG72KpH345LC9teABsdTXrqg&s",
-      "description": "a classic combination of spicy cured meat layered over melty cheese and tomato sauce"
+      "description": "a classic combination of spicy cured meat layered over melty cheese and tomato sauce",
+      "time": "555"
     },
     {
       "id": "1769287229440",
@@ -45,39 +46,24 @@
     },
     {
       "id": "1769287323983",
-      "title": "Besh",
+      "title": "Beshbarmak",
       "src": "https://lifehacker.ru/wp-content/uploads/2024/11/207_1732664622.jpg",
       "description": "kazakh food"
     },
     {
-      "id": "1769287819941",
-      "title": "Soup",
-      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQhouir1X5nz8sgIv7717InLw-_q1JeTwbiw&s",
-      "description": "soup description"
+      "id": "1769842786358",
+      "title": "Blini",
+      "src": "https://prostokvashino.ru/upload/resize_cache/iblock/d62/800_800_0/d6269fa359b8595e632183c2c267c4ec.jpg",
+      "description": "тонкие, круглые мучные изделия, обжаренные на сковороде из жидкого теста",
+      "algorithm": "ннннннннн"
     },
     {
-      "id": "1769288044026",
-      "title": "sushi",
-      "src": "https://allolosos.com.ua/i/akcii/64abf223a47af.jpg",
-      "description": "rice with seafoods"
-    },
-    {
-      "id": "1769327291978",
-      "title": "milkshake",
-      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE-1kaxr9oPJyf4y89AHSdj137z1ELgk0rpQ&s",
-      "description": "drink"
-    },
-    {
-      "id": "1769329904993",
-      "title": "",
-      "src": "",
-      "description": ""
-    },
-    {
-      "id": "1769329912281",
-      "title": "",
-      "src": "",
-      "description": ""
+      "id": "1769843345844",
+      "title": "Burger",
+      "src": "https://images.themodernproper.com/production/posts/2016/ClassicCheeseBurger_9.jpg?w=1200&h=1200&q=60&fm=jpg&fit=crop&dm=1749310239&s=463b18fc3bb51dc5d96e866c848527c4",
+      "description": "sandwich",
+      "algorithm": "cooking",
+      "time": "15min"
     }
   ]
 }

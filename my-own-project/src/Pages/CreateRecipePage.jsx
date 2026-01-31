@@ -6,6 +6,8 @@ const AddRecipe = () => {
     const [title, setTitle] = useState("");
     const [img, setImg] = useState("");
     const [description, setDescription] = useState("");
+    const [algorithm, setAlgorithm] = useState("");
+    const [time, setTime] = useState("");
 
     function handleSubmit(event) {
         event.preventDefault();
@@ -14,7 +16,9 @@ const AddRecipe = () => {
             id: Date.now().toString(),
             title,
             src: img,
-            description
+            description,
+            algorithm,
+            time
         }
 
         const recipes = JSON.parse(localStorage.getItem("recipes")) || [];
@@ -41,6 +45,14 @@ const AddRecipe = () => {
                 <div className="form-group">
                     <label>Recipe description</label>
                     <input type="text" className="form-input" value={description} onChange={(e) => setDescription(e.target.value)} />
+                </div>
+                 <div className="form-group">
+                    <label>Recipe algorithm</label>
+                    <textarea type="text" className="form-input" value={algorithm} onChange={(e) => setAlgorithm(e.target.value)} ></textarea>
+                </div>
+                 <div className="form-group">
+                    <label>Recipe time</label>
+                    <input type="text" className="form-input" value={time} onChange={(e) => setTime(e.target.value)} />
                 </div>
                 <button className="add-recipe-button" type="submit">Add recipe</button>
             </form>

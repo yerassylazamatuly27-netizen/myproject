@@ -11,10 +11,11 @@ function LoginPage() {
     e.preventDefault();
     try {
       const data = await loginUser(email, password);
-      localStorage.setItem("accessToken", data.token);
-      alert("Login successful");
+      localStorage.setItem("accessToken", data.accessToken);
+      alert("LOGIN SUCCESSFUL");
+      window.location.replace("/");
     } catch {
-      alert("Login failed");
+      alert("LOGIN FAILED");
     }
   };
 
