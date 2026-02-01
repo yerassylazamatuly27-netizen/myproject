@@ -15,9 +15,6 @@ function HomePage() {
             <p className="subtitle">Лучшие рецепты в одном месте</p>
 
             <div className="buttons">
-                {/* <Link to="/login" className="btn">   Login </Link> */}
-
-                {/* <Link to="/register" className="btn">  Register  </Link> */}
 
                 <Link to="/recipes" className="btn">
                     All Recipes

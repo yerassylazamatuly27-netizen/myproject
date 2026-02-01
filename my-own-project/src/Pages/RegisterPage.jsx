@@ -11,6 +11,7 @@ function RegisterPage() {
     e.preventDefault();
     try {
       await registerUser(email, password);
+      //validation if fields are empty
       alert("Registration successful");
     } catch {
       alert("Registration failed");

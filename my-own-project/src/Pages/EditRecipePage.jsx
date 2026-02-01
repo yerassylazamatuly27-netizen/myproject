@@ -6,7 +6,7 @@ import "../App.css";
 const EditRecipePage = () => {
 
     const { id } = useParams();
-    const [recipe, setRecipe] = useState({});
+
     const [title, setTitle] = useState("");
     const [src, setSrc] = useState("");
     const [description, setDescription] = useState("");
@@ -16,7 +16,6 @@ const EditRecipePage = () => {
     const loadRecipe = async () => {
         try {
             const response = await getRecipe(id);
-            setRecipe(response);
             setTitle(response.title);
             setSrc(response.src);
             setDescription(response.description);
@@ -39,8 +38,6 @@ const EditRecipePage = () => {
             time
         }
 
-        const recipes = JSON.parse(localStorage.getItem("recipes")) || [];
-        recipes.push(newRecipe);
        
 
         editRecipe(newRecipe, id).then((response) => {
