@@ -20,7 +20,6 @@ export async function createRecipe(recipe) {
 export async function getRecipe(id) {
     const res = await fetch(BASE_URL + "/recipes/" + id);
     return res.json();
-    
 }
 
 export async function editRecipe(recipe, id) {

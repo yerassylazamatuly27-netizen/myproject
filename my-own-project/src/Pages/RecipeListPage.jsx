@@ -7,7 +7,6 @@ import SearchForm from "../components/SearchForm.jsx";
 function RecipeListPage() {
   const [recipes, setRecipes] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [deleted, setDeleted] = useState(false);
 
   useEffect(() => {
     getRecipes()
@@ -21,7 +20,6 @@ function RecipeListPage() {
 
   function onSearchHandler(searchValue) {
     setSearchValue(searchValue);
-    console.log(searchValue)
   }
   const filteredRecipes = recipes.filter((recipe) => {
 

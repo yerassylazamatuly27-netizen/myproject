@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { createRecipe } from "../services/recipeService";
-import NavBar from '../components/NavBar';
 
 
 const AddRecipe = () => {
@@ -12,6 +11,8 @@ const AddRecipe = () => {
 
     function handleSubmit(event) {
         event.preventDefault();
+
+        // make validation if fields are empty
         
         const newRecipe = {
             id: Date.now().toString(),
@@ -22,9 +23,9 @@ const AddRecipe = () => {
             time
         }
 
-        const recipes = JSON.parse(localStorage.getItem("recipes")) || [];
-        recipes.push(newRecipe);
-        localStorage.setItem("recipes", JSON.stringify(recipes));
+        const recipes = JSON.parse(localStorage.getItem("recipes")) || []; //remove
+        recipes.push(newRecipe); //remove
+        localStorage.setItem("recipes", JSON.stringify(recipes)); //remove
 
        createRecipe(newRecipe).then((response) => {
         console.log(response)
