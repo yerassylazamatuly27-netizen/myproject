@@ -7,6 +7,7 @@ import RecipeListPage from "./Pages/RecipeListPage.jsx";
 import CreateRecipePage from "./Pages/CreateRecipePage.jsx";
 import RecipePage from "./Pages/RecipePage.jsx";
 import EditRecipePage from "./Pages/EditRecipePage.jsx";
+import NavBar from "./components/NavBar.jsx";
 
 
 const authorized = Boolean(localStorage.getItem("accessToken"));
@@ -17,6 +18,11 @@ const authorized = Boolean(localStorage.getItem("accessToken"));
 
 function App() {
   return (
+    <>
+
+<NavBar />
+    
+    
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/login" element={<LoginPage />} />
@@ -26,6 +32,7 @@ function App() {
       <Route path="/recipes/:id/edit" element={<EditRecipePage />} />
       <Route path="/recipes/:id" element={<RecipePage />} />
     </Routes>
+    </>
   );
 }
 

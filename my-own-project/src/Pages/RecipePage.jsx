@@ -27,12 +27,13 @@ const RecipePage = () => {
             <img
                 src={recipe.src}
                 alt={recipe.title}
-                className="recipe-image"
+                className= "small-image"
+                
             />
-            <h3 className="recipe-title">{recipe.title}</h3>
-            <p className="recipe-description">{recipe.description}</p>
-            <p className="recipe-algorithm">{recipe.algorithm}</p>
-            <p className="recipe-time">{recipe.time}</p>
+            
+            <p className="recipe-description"> {recipe.description}</p>
+            <p className="recipe-algorithm">Алгоритм приготовления: {recipe.algorithm}</p>
+            <p className="recipe-time">Время приготовления: {recipe.time}</p>
         </div>
     )
 }

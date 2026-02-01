@@ -29,12 +29,14 @@
       "id": "1769286570117",
       "title": "Pasta",
       "src": "https://assets.epicurious.com/photos/642aebf9a2cf918d8b679f65/16:9/w_6815,h_3833,c_limit/PastaPomodoro_RECIPE_033023_50036.jpg",
-      "description": "Italian wheat dough boiled in various shapes"
+      "description": "Italian wheat dough boiled in various shapes",
+      "algorithm": "варить",
+      "time": "15"
     },
     {
       "id": "1769286653405",
       "title": "Pepperoni pizzawa",
-      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2f38jmDq8OZhG72KpH345LC9teABsdTXrqg&s",
+      "src": "https://www.hunts.com/sites/g/files/qyyrlu211/files/uploadedImages/img_6934_48664.jpg",
       "description": "a classic combination of spicy cured meat layered over melty cheese and tomato sauce",
       "time": "555"
     },
@@ -48,7 +50,9 @@
       "id": "1769287323983",
       "title": "Beshbarmak",
       "src": "https://lifehacker.ru/wp-content/uploads/2024/11/207_1732664622.jpg",
-      "description": "kazakh food"
+      "description": "kazakh food",
+      "algorithm": "тесто мясо лук",
+      "time": "60"
     },
     {
       "id": "1769842786358",
@@ -58,12 +62,12 @@
       "algorithm": "ннннннннн"
     },
     {
-      "id": "1769843345844",
-      "title": "Burger",
-      "src": "https://images.themodernproper.com/production/posts/2016/ClassicCheeseBurger_9.jpg?w=1200&h=1200&q=60&fm=jpg&fit=crop&dm=1749310239&s=463b18fc3bb51dc5d96e866c848527c4",
-      "description": "sandwich",
-      "algorithm": "cooking",
-      "time": "15min"
+      "id": "1769936377307",
+      "title": "egg",
+      "src": "https://s1.eda.ru/StaticContent/Photos/d/28/d28b537633f040dc948af386ab3ffee1.jpg",
+      "description": "breakfast",
+      "algorithm": "cook eggs in pan",
+      "time": "10"
     }
   ]
 }

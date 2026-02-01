@@ -76,7 +76,7 @@ const EditRecipePage = () => {
                     <label>Recipe time</label>
                     <input type="text" className="form-input" value={time} onChange={(e) => setTime(e.target.value)} />
                 </div>
-                <button className="add-recipe-button" type="submit">Save changes</button>
+                <button className="btn" type="submit">Save changes</button>
             </form>
         </div>
     )

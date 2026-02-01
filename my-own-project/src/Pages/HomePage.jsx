@@ -11,7 +11,7 @@ function logoutHandler() {
 function HomePage() {
     return (
         <div className="home">
-            <h1 className="title">Recipe App</h1>
+            <h1 className="title">Cookify</h1>
             <p className="subtitle">Лучшие рецепты в одном месте</p>
 
             <div className="buttons">

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { createRecipe } from "../services/recipeService";
+import NavBar from '../components/NavBar';
 
 
 const AddRecipe = () => {
@@ -31,6 +32,8 @@ const AddRecipe = () => {
     }
 
     return (
+        <>
+        
         <div className="add-recipes-page page">
             <h1>Add recipes</h1>
             <form className="add-recipe-form" onSubmit={handleSubmit}>
@@ -54,9 +57,10 @@ const AddRecipe = () => {
                     <label>Recipe time</label>
                     <input type="text" className="form-input" value={time} onChange={(e) => setTime(e.target.value)} />
                 </div>
-                <button className="add-recipe-button" type="submit">Add recipe</button>
+                <button className="btn" type="submit">Add recipe</button>
             </form>
         </div>
+        </>
     )
 }
 
